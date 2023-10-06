@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-any-by
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var anyBy = require( '@stdlib/utils-any-by' );
+import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@esm/index.mjs';
 ```
 
 #### anyBy( collection, predicate\[, thisArg ] )
@@ -191,9 +175,14 @@ var mean = context.sum / context.count;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var anyBy = require( '@stdlib/utils-any-by' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
+import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@esm/index.mjs';
 
 function threshold( value ) {
     return ( value > 0.95 );
@@ -210,6 +199,10 @@ for ( i = 0; i < 100; i++ ) {
 
 bool = anyBy( arr, threshold );
 // returns <boolean>
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -252,7 +245,7 @@ bool = anyBy( arr, threshold );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -322,17 +315,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/any-by]: https://github.com/stdlib-js/utils-async-any-by
+[@stdlib/utils/async/any-by]: https://github.com/stdlib-js/utils-async-any-by/tree/esm
 
-[@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils-any-by-right
+[@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils-any-by-right/tree/esm
 
-[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils-every-by
+[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils-every-by/tree/esm
 
-[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each/tree/esm
 
-[@stdlib/utils/none-by]: https://github.com/stdlib-js/utils-none-by
+[@stdlib/utils/none-by]: https://github.com/stdlib-js/utils-none-by/tree/esm
 
-[@stdlib/utils/some-by]: https://github.com/stdlib-js/utils-some-by
+[@stdlib/utils/some-by]: https://github.com/stdlib-js/utils-some-by/tree/esm
 
 <!-- </related-links> -->
 
