@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@esm/index.mjs';
+import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@v0.2.1-esm/index.mjs';
 ```
 
 #### anyBy( collection, predicate\[, thisArg ] )
@@ -182,7 +182,7 @@ var mean = context.sum / context.count;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@esm/index.mjs';
+import anyBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-any-by@v0.2.1-esm/index.mjs';
 
 function threshold( value ) {
     return ( value > 0.95 );
